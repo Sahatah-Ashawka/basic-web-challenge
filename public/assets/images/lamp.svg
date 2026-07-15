@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Lamp">
+  <rect width="320" height="240" fill="#111315"/>
+  <path d="M122 50h76l28 76H94z" fill="#f2c94c"/>
+  <path d="M132 126h56l-16 62h-24z" fill="#d7e2e8"/>
+  <rect x="108" y="190" width="104" height="14" rx="7" fill="#d7e2e8"/>
+  <path d="M94 126h132" stroke="#fff1a6" stroke-width="10" stroke-linecap="round"/>
+</svg>

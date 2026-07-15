@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Refrigerator">
+  <rect width="320" height="240" fill="#111315"/>
+  <rect x="102" y="28" width="116" height="188" rx="12" fill="#d7e2e8"/>
+  <path d="M102 92h116" stroke="#26313a" stroke-width="8"/>
+  <rect x="198" y="56" width="8" height="24" rx="4" fill="#26313a"/>
+  <rect x="198" y="126" width="8" height="38" rx="4" fill="#26313a"/>
+  <rect x="122" y="46" width="52" height="28" rx="5" fill="#58d68d" opacity=".72"/>
+  <rect x="118" y="118" width="56" height="70" rx="7" fill="#9ca8ae" opacity=".38"/>
+</svg>

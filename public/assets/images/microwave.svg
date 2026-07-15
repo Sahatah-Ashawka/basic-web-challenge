@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Microwave">
+  <rect width="320" height="240" fill="#111315"/>
+  <rect x="54" y="64" width="212" height="112" rx="12" fill="#d7e2e8"/>
+  <rect x="76" y="84" width="126" height="72" rx="7" fill="#26313a"/>
+  <path d="M96 120c18-18 42 18 62 0 12-10 22-10 32 0" fill="none" stroke="#58d68d" stroke-width="8" stroke-linecap="round"/>
+  <rect x="218" y="86" width="28" height="20" rx="4" fill="#9ca8ae"/>
+  <circle cx="232" cy="132" r="13" fill="#f2c94c"/>
+</svg>

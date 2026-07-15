@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Cup">
+  <rect width="320" height="240" fill="#111315"/>
+  <path d="M88 62h130l-14 122H102z" fill="#d7e2e8"/>
+  <path d="M216 88h22c24 0 26 54 0 54h-28" fill="none" stroke="#d7e2e8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M104 82h98" stroke="#58d68d" stroke-width="12" stroke-linecap="round"/>
+  <rect x="94" y="190" width="116" height="12" rx="6" fill="#9ca8ae"/>
+</svg>

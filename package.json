@@ -1,0 +1,9 @@
+{
+  "name": "very-basic-web-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A very easy item-guessing web challenge.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

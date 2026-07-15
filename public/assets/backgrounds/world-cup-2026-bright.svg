@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9e8ff"/>
+      <stop offset=".42" stop-color="#fff6c8"/>
+      <stop offset="1" stop-color="#74d99f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".08" r=".42">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset=".38" stop-color="#ffe978" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#ffe978" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#29c269"/>
+      <stop offset="1" stop-color="#118549"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#sun)"/>
+  <path d="M0 552C245 478 472 454 800 454s555 24 800 98v348H0z" fill="url(#field)"/>
+  <path d="M0 552C245 478 472 454 800 454s555 24 800 98" fill="none" stroke="#f8fff6" stroke-width="10" opacity=".78"/>
+  <ellipse cx="800" cy="710" rx="330" ry="92" fill="none" stroke="#f8fff6" stroke-width="8" opacity=".55"/>
+  <path d="M800 454v446M0 725h1600" stroke="#f8fff6" stroke-width="8" opacity=".45"/>
+  <g opacity=".3" fill="#ffffff">
+    <rect x="86" y="140" width="1428" height="34" rx="17"/>
+    <rect x="160" y="202" width="1280" height="28" rx="14"/>
+    <rect x="250" y="258" width="1100" height="22" rx="11"/>
+  </g>
+  <text x="800" y="365" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="132" font-weight="900" fill="#ffffff" opacity=".82">2026</text>
+  <text x="800" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#0b2d4a" opacity=".72">FIFA WORLD CUP</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Electric fan">
+  <rect width="320" height="240" fill="#111315"/>
+  <circle cx="160" cy="92" r="66" fill="none" stroke="#d7e2e8" stroke-width="8"/>
+  <circle cx="160" cy="92" r="14" fill="#f2c94c"/>
+  <path d="M160 78c34-38 58-20 34 8-18 20-30 14-34-8zM146 99c-50 8-58-20-22-28 26-6 30 6 22 28zM172 102c16 48-10 62-24 28-10-24 2-32 24-28z" fill="#58d68d"/>
+  <path d="M160 158v42M124 204h72" stroke="#d7e2e8" stroke-width="12" stroke-linecap="round"/>
+</svg>
