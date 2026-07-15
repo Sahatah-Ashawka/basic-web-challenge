@@ -12,31 +12,43 @@ const items = [
     value: "Neymar",
     ability: "Elite dribbling, flair, playmaking, and creative finishing.",
     image: "/assets/players/neymar.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg/500px-Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg",
   },
   {
     value: "Kylian Mbappe",
     ability: "Explosive pace, sharp dribbling, and clinical finishing.",
     image: "/assets/players/kylian-mbappe.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg/500px-Kylian_Mbappe_France_v_Senegal_16_June_2026-391_%28cropped%29.jpg",
   },
   {
     value: "Cristiano Ronaldo",
     ability: "Powerful goalscoring, aerial threat, speed, and two-footed attack.",
     image: "/assets/players/cristiano-ronaldo.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/500px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg",
   },
   {
     value: "Lionel Messi",
     ability: "Close-control dribbling, vision, passing, and precise finishing.",
     image: "/assets/players/lionel-messi.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg/500px-Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
   },
   {
     value: "Erling Haaland",
     ability: "Speed, strength, positioning, and ruthless box finishing.",
     image: "/assets/players/erling-haaland.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg/500px-Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg",
   },
   {
     value: "Lamine Yamal",
     ability: "Flair, chance creation, elite dribbling, and curling shots.",
     image: "/assets/players/lamine-yamal.jpg",
+    fallback:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Lamine_Yamal%2C_S%C3%A1nchez_se_reuni%C3%B3_con_los_futbolistas_de_la_selecci%C3%B3n_espa%C3%B1ola_tras_ganar_la_Eurocopa_2024_%283%29_%28cropped%29.jpg/500px-Lamine_Yamal%2C_S%C3%A1nchez_se_reuni%C3%B3_con_los_futbolistas_de_la_selecci%C3%B3n_espa%C3%B1ola_tras_ganar_la_Eurocopa_2024_%283%29_%28cropped%29.jpg",
   },
 ];
 
@@ -84,7 +96,7 @@ function renderPopup(itemQuery = "") {
     return `<div class="overlay" role="dialog" aria-modal="true" aria-label="${escapeHtml(item.value)} ability">
       <div class="popup">
         <a class="close" href="/" data-close-popup aria-label="Close">x</a>
-        <img class="popup-image" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.value)} image">
+        <img class="popup-image" src="${escapeHtml(item.image)}" data-fallback="${escapeHtml(item.fallback)}" alt="${escapeHtml(item.value)} image">
         <h2>${escapeHtml(item.value)}</h2>
         <p>${escapeHtml(item.ability)}</p>
       </div>
@@ -270,7 +282,7 @@ function renderPage(itemQuery = "") {
         .map(
           (item) =>
             `<a class="box" href="/?name=${encodeURIComponent(item.value)}" data-name="${escapeHtml(item.value)}" aria-label="${escapeHtml(item.value)}">
-              <img src="${escapeHtml(item.image)}" alt="">
+              <img src="${escapeHtml(item.image)}" data-fallback="${escapeHtml(item.fallback)}" alt="">
             </a>`
         )
         .join("")}

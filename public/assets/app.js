@@ -1,5 +1,25 @@
 const bgMusic = document.getElementById("bgMusic");
 
+function applyImageFallback(image) {
+  const fallback = image.dataset.fallback;
+  if (!fallback || image.dataset.fallbackApplied === "true") {
+    return;
+  }
+
+  image.dataset.fallbackApplied = "true";
+  image.src = fallback;
+}
+
+function watchImage(image) {
+  image.addEventListener("error", () => applyImageFallback(image));
+
+  if (image.complete && image.naturalWidth === 0) {
+    applyImageFallback(image);
+  }
+}
+
+document.querySelectorAll("img[data-fallback]").forEach(watchImage);
+
 function removePopup() {
   document.querySelectorAll(".overlay").forEach((overlay) => overlay.remove());
 }
@@ -29,7 +49,9 @@ function showPlayerPopup(player) {
   const image = document.createElement("img");
   image.className = "popup-image";
   image.src = player.image;
+  image.dataset.fallback = player.fallback;
   image.alt = player.value + " image";
+  watchImage(image);
 
   const title = document.createElement("h2");
   title.textContent = player.value;
