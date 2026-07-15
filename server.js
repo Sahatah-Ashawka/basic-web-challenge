@@ -85,7 +85,6 @@ function renderPopup(itemQuery = "") {
     return `<div class="overlay" role="dialog" aria-modal="true" aria-label="Flag">
       <div class="popup success">
         <a class="close" href="/" data-close-popup aria-label="Close">x</a>
-        <h2>Flag Item</h2>
         <p>Flag: <strong>${escapeHtml(FLAG)}</strong></p>
       </div>
     </div>`;
